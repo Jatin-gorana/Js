@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Largest Number</title>
+
+    <style>
+        .container{
+            margin: 40px;
+            padding: 40px;
+            border-radius: 10px;
+            background-color: orange;
+            height: 500px;
+        }
+        .para{
+            font-size: 20px;
+            font-style: sans-serif;
+        }
+        .inp{
+            background-color: rgb(51, 153, 124);
+            border-radius: 15px;
+            height: 25px;
+        }
+        button{
+            height: 30px;
+            cursor: pointer;
+            border-radius: 20px;
+            color: aqua;
+            background-color: black;
+        }
+        .para2{
+            font-size: 20px;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <p class="para">Enter a number</p>
+        <input type="number" class="inp" id="1"> <br> <br>
+        <p class="para">Enter another number</p> 
+        <input type="number" class="inp" id="2"> <br> <br>
+        <button onclick="comparison()">Submit</button> <br> <br>
+        <p class="para2">Hello, this is a comparison simulator.</p>
+    </div>
+
+    <script>
+        function comparison(){
+        var a = document.getElementById("1").value;
+        var b = document.getElementById("2").value;
+
+        // let row = {};
+        // row += `<p>${a, "is greater than", b}</p>`;
+
+        if (a > b){
+            // document.getElementsByClassName("para2").innerHTML = <p>a, "is greater than ", b</p>;
+            console.log(a + " is greater than " + b);
+        }
+        else if(b > a){
+            // document.getElementsByClassName("para2").innerHTML =  b, "is greater than", a;
+            console.log(b + " is greater than " + a);
+        }
+        else{
+            // document.getElementsByClassName("para2").innerHTML = "Both the numbers are equal";
+            console.log("Both the nos are equal");
+        }
+    }
+        
+
+    </script>
+</body>
+</html>

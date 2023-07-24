@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h1>Welcome to my Javascript tutorial</h1>
+    <div id="firstContainer" class="container">
+        <button id="click">Click me</button>
+    </div>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+</body>
+<script>
+    // 1. Ways to print in JavaScript 
+
+    // given below console.log is shown in the console
+    // console.log("Hello World", 4 + 5, "Another log");
+    // given below alert is shown when page is open or reloaded
+    // alert("me");
+    // document.write("this is document write");
+    // console.warn("this is a warning");
+    // console.error("this is an error");
+    // console.clear()
+
+
+    // 2. Javascript Variables
+    // What are variables?  Container to store data values.
+    
+    var number1 = 34;
+    var number2 = 32.5;
+    console.log(number1 * number2);
+
+    // 4. Data types in JavaScript
+    // Numbers
+    var num1 = 5434;
+    var num2 = 232;
+
+    // String
+    var str1 = "This is a string";
+    var str2 = "This is also a string";
+
+    // Objects
+    var marks = {
+        ravi: 34,
+        shubham: 43,
+        john: 78,
+    }
+
+    console.log(marks);
+
+    // Booleans
+    var a = true;
+    var b = false;
+    console.log(a,b)
+
+    var und;
+    console.log(und)
+
+    // undefined and null are different
+
+    var n = null;
+    console.log(n)
+
+    /* At a very level, there are two types of data types in JavaScript
+       1.Primitive data types: undefined, null, number, string, boolean , symbol
+       2.Reference data types: Arrays and Objects
+    */
+
+    var arr = [1,2,"jatin",4,5];
+    console.log(arr);
+
+    // Operations in JavaScript
+    // Arithmetic Operators
+
+    var a = 100;
+    var b = 10;
+    console.log("The value of a + b is ", a+b);
+    console.log("The value of a - b is ", a-b);
+    console.log("The value of a * b is ", a*b);
+    console.log("The value of a / b is ", a/b);
+
+    // Assignment Operators
+    var c = b;
+    // c +=2;
+    // c -=2;
+    // c *=2;
+    c /=2;
+    console.log(c);
+
+    var x = 34;
+    var y = 56;
+    console.log(x <= y)
+    console.log(x == y)
+    console.log(x >= y)
+    console.log(x > y)
+    console.log(x < y)
+
+    // Logical Opertors
+
+    // logical and 
+    console.log(true && true);
+    console.log(true && false);
+    console.log(false && true);
+    console.log(false && false);
+
+    // logical or
+    console.log(true || true);
+    console.log(true || false);
+    console.log(false || true);
+    console.log(false || false);
+
+    // logical not
+    console.log(!false);
+    console.log(!true);
+</script>
+
+</html>

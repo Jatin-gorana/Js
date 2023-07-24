@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 2px solid red;
+            margin: 3px 0;
+            background: cyan;
+            padding: 9px;
+        }
+
+        .bg-primary {
+            background-color: blueviolet;
+        }
+
+        .text-success {
+            color: rgb(252, 252, 252);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my Javascript tutorial</h1>
+    <div id="firstContainer" class="container">
+        <button id="click">Click me</button>
+        <p>This is a paragraph which is the best para in the universe </p>
+    </div>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+
+    <script>
+
+        // Array methods
+        let myArr = ["fan", "camera", 34, true];
+        console.log(myArr.length);
+        myArr.pop();
+        myArr.push("jatin");
+        myArr.shift();
+        myArr.unshift("camera");
+        console.log(myArr);
+
+        // string methods in javascript
+        let myLovelyString = "Jatin is a good good good boy";
+        console.log(myLovelyString.length);
+        console.log(myLovelyString.indexOf("good"));
+        console.log(myLovelyString.lastIndexOf("good"));
+
+        console.log(myLovelyString.slice(2, 4))
+
+        d = myLovelyString.replace("Jatin", "Rohan")
+
+        console.log(d, myLovelyString)
+
+        //  dates methods
+        myDate = new Date();
+        console.log(myDate.getTime());
+        console.log(myDate.getFullYear());
+        console.log(myDate.getDay());
+        console.log(myDate.getMinutes());
+        console.log(myDate.getHours());
+
+        // DOM Manipulation document object model
+        let elem = document.getElementById('click')
+        console.log(elem);
+
+        let elemClass = document.getElementsByClassName("container");
+        console.log(elemClass);
+        // elemClass[0].style.background = "cyan";
+        elemClass[0].classList.add("bg-primary");
+        elemClass[0].classList.add("test-success");
+        console.log(elem.innerHTML);
+        console.log(elem.innerText);
+
+        console.log(elemClass[0].innerHTML);
+        console.log(elemClass[0].innerText);
+
+        tn = document.getElementsByTagName("button")
+        console.log(tn);
+
+        createdElement = document.createElement('p');
+        createdElement.innerHTML = "This is a created para";
+        tn[0].appendChild(createdElement);
+        createdElement1 = document.createElement("b");
+        createdElement1.innerHTML = "This is a created bold";
+        tn[0].replaceChild(createdElement1, createdElement);
+        // removeChild(Element); --> removes an element
+
+
+        td = document.getElementsByTagName("div");
+        console.log(td);
+
+
+        
+        sel = document.querySelector('.container');
+        console.log(sel);
+        sel = document.querySelectorAll('.container');
+        console.log(sel);
+
+    
+
+
+
+        // Some document funtions 
+        /*document.location
+        document.title
+        document.url
+        document.scripts
+        document.links
+        document.forms
+        document.images
+        document.domain
+        */
+        
+
+
+    </script>
+</body>
+
+</html>

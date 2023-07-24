@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h1>Welcome to my Javascript tutorial</h1>
+    <div id="firstContainer" class="container">
+        <button id="click">Click me</button>
+    </div>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+
+    <!-- If a number in console shows as blue color then it is a number and if it shows black then it a string -->
+
+    <script>
+        // funtions in JavaScript
+        function avg(a, b) {
+            c = (a + b) / 2;
+            return c;
+        }
+        // DRY = Do not repeat yourself
+
+        c1 = avg(4, 6);
+        c2 = avg(14, 16);
+        console.log(c1, c2);
+
+        // Conditions in JavaScript
+
+        // Single if statement 
+        // var age = 41;
+        // if (age > 18) {
+        //     console.log('You can drink rasna water')
+        // }
+
+        // if - else statement
+        // var age = 11;
+        // if (age > 18) {
+        //     console.log('You can drink rasna water')
+        // }
+        // else{
+        //     console.log('You cannot drink rasna water')
+        // }
+
+        // if - else ladder
+        var age = 25;
+        if (age > 32) {
+            console.log('Your are not a kid');
+        }
+        else if (age > 22) {
+            console.log('Yes Bacche nahi rhe');
+        }
+        else if (age > 18) {
+            console.log('18, Bacche nahi rhe');
+        }
+        else if (age > 26) {
+            console.log('Jara bhi Bacche nahi rhe');
+        }
+        else {
+            console.log("Bachhe rhe");
+        }
+        console.log("End of ladder");
+
+        // Loops in JavaScript
+        var arr = [1, 2, 3, 4, 5, 6, 7];
+        console.log(arr);
+        for (var i = 0; i < arr.length; i++) {
+            console.log(arr[i])
+        }
+
+        arr.forEach(function (element) {
+            console.log(element);
+
+        })
+
+        // let j = 0;
+        // const a = 0;
+        // ac = ac + 1;
+
+        let j = 0;
+        while (j < arr.length) {
+            console.log(arr[j]);
+            j++;
+        }
+
+        do {
+            console.log(arr[j]);
+            j++;
+        } while (j < arr.length);
+
+
+
+        // Break and continue statements
+        var arr = [1, 2, 3, 4, 5, 6, 7];
+        // console.log(arr);
+        for (var i = 0; i < arr.length; i++) {
+            if (i == 2) {
+                break;
+            }
+            console.log(arr[i])
+        }
+
+        var arr = [1, 2, 3, 4, 5, 6, 7];
+        // console.log(arr);
+        for (var i = 0; i < arr.length; i++) {
+            if (i == 2) {
+                continue;
+            }
+            console.log(arr[i])
+        }
+
+
+
+    </script>
+</body>
+
+</html>

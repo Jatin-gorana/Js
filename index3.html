@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 2px solid red;
+            margin: 3px 0;
+            background: cyan;
+            padding: 9px;
+        }
+
+        .bg-primary {
+            background-color: blueviolet;
+        }
+
+        .text-success {
+            color: rgb(252, 252, 252);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my Javascript tutorial</h1>
+    <div id="firstContainer" class="container">
+        <button id="click" onclick="clicked()">Click me</button>
+        <p>This is a paragraph which is the best para in the universe </p>
+    </div>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+
+    <script>
+        // Events in JavaScript
+        function clicked() {
+            console.log('The button was clicked');
+        }
+        window.onload = function () {
+            console.log('The document was loaded')
+        }
+        firstContainer.addEventListener('click', function () {
+            console.log('Click hua')
+        })
+        firstContainer.addEventListener('mouseover', function () {
+            console.log('Mouse on Container')
+        })
+        firstContainer.addEventListener('mouseout', function () {
+            console.log('Mouse out of Container')
+        })
+        firstContainer.addEventListener('mouseup', function () {
+            console.log('Mouse up when clicked on Container')
+        })
+        firstContainer.addEventListener('mousedown', function () {
+            console.log('Mouse down when clicked on Container')
+        })
+
+        firstContainer.addEventListener('click', function () {
+            document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked </b>"
+            console.log("Clicked the container")
+        })
+
+        // Arrow funtions
+        // function sum(a,b){
+        //     return a+b;
+        // }
+        // given below syntax is of arrow funtion
+        sum = (a, b) => {
+            return a + b;
+        }
+
+        logKaro = () => {
+            document.querySelectorAll('.container')[1].innerHTML = "<b> Set interval fired</b>"
+            console.log("I am your log")
+        }
+        // setTimeout and setInterval
+        // time set below is in milisecond
+        clr = setInterval(logKaro, 3000)
+        // use clearInterval(clr)/clearTimeout(clr) to cancel setInterval/SetTimeout
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
